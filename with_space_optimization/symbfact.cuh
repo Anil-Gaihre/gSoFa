@@ -1553,7 +1553,7 @@ return N_src_group;
 void symbfact_min_id(int args,char** argv,int myrank,ull_t& fill_count, double& time) 
 //int main(int args, char **argv)
 {
-    std::cout<<"Input: ./exe beg csr weight #Processes chunk_size percent_cat0 percent_cat1 N_blocks_source_cat2 N_GPU_Node Mem_alloc_factor(5data)\n";
+    std::cout<<"Input: ./exe beg end csr #Num_GPU Not_used_put1024 notused_put_0 not_used_put_1 1 Total_memory(6 data)\n";
     if(args!=11){std::cout<<"Wrong input\n";exit(1);}
 
     const char *beg_file=argv[1];
