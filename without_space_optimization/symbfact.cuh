@@ -1,4 +1,4 @@
-#include "graph.h"
+//#include "graph.h"
 #include "wtime.h"
 #include "barrier.cuh"
 #include <omp.h>
