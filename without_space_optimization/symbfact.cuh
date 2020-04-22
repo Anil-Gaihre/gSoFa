@@ -991,7 +991,7 @@ int Compute_Src_group(int vert_count)
 void symbfact_min_id(int args,char** argv,int myrank,ull_t& fill_count, double& time) 
 //int main(int args, char **argv)
 {
-    std::cout<<"Input: ./exe beg csr weight #GPU chunk_size percent_cat0 percent_cat1 N_blocks_source_cat2 N_GPU_pernode N_Src_group\n";
+    std::cout<<"Input: ./exe beg csr weight #GPU 0 0 1 1 4096\n";
     if(args!=11){std::cout<<"Wrong input\n";exit(1);}
 
     const char *beg_file=argv[1];
