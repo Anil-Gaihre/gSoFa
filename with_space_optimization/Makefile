@@ -28,7 +28,7 @@ $(exe):$(objs)
 	 $(cc) $(objs) $(commflags) -o $(exe)
 
 test:$(exe)
-		mpiexec -n 1 $(exe) ../dataset/colbeg_11948.dat ../dataset/colend_11948.dat ../dataset/csr_11948.dat 1 1024 $(p0) $(p1) $b 6 4096
+		mpiexec -n 1 $(exe) ./dataset/colbeg_11948.dat ./dataset/colend_11948.dat ../dataset/csr_11948.dat 1 1024 $(p0) $(p1) $b 6 4096
 
 #mpirun -n 2 -host localhost $(exe)
 clean:
