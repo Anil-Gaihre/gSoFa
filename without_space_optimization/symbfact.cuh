@@ -991,19 +991,20 @@ int Compute_Src_group(int vert_count)
 void symbfact_min_id(int args,char** argv,int myrank,ull_t& fill_count, double& time) 
 //int main(int args, char **argv)
 {
-    std::cout<<"Input: ./exe beg csr weight #GPU 0 0 1 1 4096\n";
-    if(args!=11){std::cout<<"Wrong input\n";exit(1);}
+    std::cout<<"Input: ./exe beg end csr #GPU\n";
+    cout<<"Num_GPU can be assigned any number of GPU. As there is no communication among the MPI process in run-time a GPU can be used multiple times."<<endl;
+    if(args!=5){std::cout<<"Wrong input\n";exit(1);}
 
     const char *beg_file=argv[1];
     const char *end_file=argv[2];
     const char *csr_file=argv[3];
     int N_virtualGPU = atoi(argv[4]);
     //int num_process=atoi(argv[4]);
-    int chunk_size=atoi(argv[5]);
-    int percent_cat0=atoi(argv[6]);
-    int percent_cat2=atoi(argv[7]);
-    int  N_blocks_source_cat2 = atoi(argv[8]);
-    int N_GPU_Node=atoi(argv[9]);
+    int chunk_size=1024;//atoi(argv[5]);
+    int percent_cat0=0;//atoi(argv[6]);
+    int percent_cat2=0;//atoi(argv[7]);
+    int  N_blocks_source_cat2 = 1;//atoi(argv[8]);
+    int N_GPU_Node=1;//atoi(argv[5]);
     // N_virtualGPU = 1;
     //int N_src_group=atoi(argv[10]);
     double* Time = new double [N_virtualGPU];
@@ -1086,7 +1087,7 @@ void symbfact_min_id(int args,char** argv,int myrank,ull_t& fill_count, double& 
 
     int_t* frontier_size_d;
     int N_src_group = Compute_Src_group(vert_count);
-    N_src_group=atoi(argv[10]);
+    // N_src_group=atoi(argv[10]);
     //  N_src_group=1;
     //  N_src_group=128;
     //  N_src_group=32;

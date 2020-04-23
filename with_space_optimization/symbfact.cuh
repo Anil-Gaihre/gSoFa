@@ -1553,20 +1553,22 @@ return N_src_group;
 void symbfact_min_id(int args,char** argv,int myrank,ull_t& fill_count, double& time) 
 //int main(int args, char **argv)
 {
-    std::cout<<"Input: ./exe beg end csr #Num_GPU Not_used_put1024 notused_put_0 not_used_put_1 1 Total_memory(6 data)\n";
-    if(args!=11){std::cout<<"Wrong input\n";exit(1);}
+    // std::cout<<"Input: ./exe beg end csr #Num_GPU Not_used_put1024 notused_put_0 not_used_put_1 1 Total_memory(6 data)\n";
+    std::cout<<"Input: ./exe beg end csr Num_GPU Total_memory(6 data)\n";
+    cout<<"Num_GPU can be assigned any number of GPU. As there is no communication among the MPI process in run-time a GPU can be used multiple times."<<endl;
+    if(args!=6){std::cout<<"Wrong input\n";exit(1);}
 
     const char *beg_file=argv[1];
     const char *end_file=argv[2];
     const char *csr_file=argv[3];
     // int num_process=atoi(argv[4]);
     int N_virtualGPU = atoi(argv[4]);//For Virtual GPU
-    int chunk_size=atoi(argv[5]);
-    int percent_cat0=atoi(argv[6]);
-    int percent_cat2=atoi(argv[7]);
-    int  N_blocks_source_cat2 = atoi(argv[8]);
-    int N_GPU_Node=atoi(argv[9]);
-    float total_memory_allocation_in_GB = atof(argv[10]);
+    int chunk_size=1024;//atoi(argv[5]);
+    int percent_cat0=0;//atoi(argv[6]);
+    int percent_cat2=0;//atoi(argv[7]);
+    int  N_blocks_source_cat2 = 1;//atoi(argv[8]);
+    int N_GPU_Node=1;//atoi(argv[9]);
+    float total_memory_allocation_in_GB = atof(argv[5]);
     //int N_src_group=atoi(argv[10]);
    //For Virtual GPU
    double* Time = new double [N_virtualGPU];
@@ -1667,7 +1669,7 @@ void symbfact_min_id(int args,char** argv,int myrank,ull_t& fill_count, double& 
     // N_src_group=256;
     // cout<<"fill_N_src_group: "<<fill_N_src_group<<endl;
 
-    cout<<"Allocating space for all 5 major datastructures: "<<endl;
+    cout<<"Allocating space for all 6 major datastructures: "<<endl;
     //***************************//
     // 1: max_id
     // 2: FQ

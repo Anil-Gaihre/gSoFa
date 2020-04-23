@@ -2,3 +2,13 @@ vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
 /gpfs/alpine/proj-shared/csc289/symbolic/super_dump/superlu_dist-master/EXAMPLE/colend_11948.dat;1;0;0;1;0;0
 vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
 /gpfs/alpine/proj-shared/csc289/symbolic/super_dump/superlu_dist-master/EXAMPLE/colend_11948.dat;1;0;0;1;0;0
+vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
+./dataset/colend_11948.dat;1;0;0;1;0;0
+vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
+./dataset/colend_11948.dat;1;0;0;1;0;0
+vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
+./dataset/colend_11948.dat;1;OMPI_FC=/sw/summit/xl/16.1.1-5/xlf/16.1.1/bin/xlf2008_r;PMIX_INSTALL_PREFIX=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2/container/..;OMPI_DIR=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2;0;0
+vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
+./dataset/colend_11948.dat;1;OMPI_FC=/sw/summit/xl/16.1.1-5/xlf/16.1.1/bin/xlf2008_r;PMIX_INSTALL_PREFIX=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2/container/..;OMPI_DIR=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2;0;0
+vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
+./dataset/colend_11948.dat;1;OMPI_FC=/sw/summit/xl/16.1.1-5/xlf/16.1.1/bin/xlf2008_r;PMIX_INSTALL_PREFIX=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2/container/..;OMPI_DIR=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-5/spectrum-mpi-10.3.1.2-20200121-p6nrnt6vtvkn356wqg6f74n6jspnpjd2;0;0
