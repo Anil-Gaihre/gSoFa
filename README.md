@@ -1,6 +1,6 @@
 Software (tested)
 -----
-g++ 5.4.0, g++ 7.5.0, CUDA 10.0
+g++ 5.4.0, g++ 7.5.0, IBM Spectrum MPI 10.3.0.0, CUDA 10.0
 Compilation flag: -O3
 
 --
