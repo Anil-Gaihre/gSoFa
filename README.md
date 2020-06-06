@@ -19,7 +19,7 @@ Execute
 ------
 Test (Runs in BC dataset): make test
 Type: "./mpi_cuda_test.bin" it will show you what is needed.
-Tips: The test graph (BC in the paper) is in the dataset folder.
+Tips: The test graph (PR in the paper) is in the Pre2 folder.
 
 --
 Dataset generation
@@ -27,7 +27,7 @@ Dataset generation
 We use SuperLU_DIST (https://github.com/xiaoyeli/superlu_dist) to get the exact reordered matrix that it uses for the Symbolic Factorization for fair comparison.
 
 The reordered matrix by the SuperLU_DIST solver before symbolic factorization in it is given as an input to gSoFa.
-We dump the reordered matrix from SuperLU_DIST solver to CSR files. An example dataset (BC) is in ascii format in dataset folder.
+We dump the reordered matrix from SuperLU_DIST solver to CSR files. An example dataset in the pre2 folder (PR) is in ascii format in dataset folder.
 
 --
 Code specification
