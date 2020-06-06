@@ -54,7 +54,7 @@ typedef unsigned long long ull_t;
 // #define max_id_fraction 0.9 //max_id_fraction =0.6 means maximum of 60% of the allocated space on GPU can be given to max_id
 
 // #define total_memory_allocation_factor 0.1 //For reequired memory space: if assigned 0.2 and 6*|V|*#concurrent_source
-#define max_id_fraction 0.9 //max_id_fraction =0.6 means maximum of 60% of the allocated space on GPU can be given to max_id
+#define max_id_fraction 0.999 //max_id_fraction =0.6 means maximum of 60% of the allocated space on GPU can be given to max_id
 
 
 
