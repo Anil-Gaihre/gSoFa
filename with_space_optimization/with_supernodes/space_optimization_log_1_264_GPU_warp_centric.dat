@@ -118,12 +118,12 @@ max_dumping GPU transfer time: 0 ms
 
 
 
-vertex count: 659033 |Total_allocation: 2.5 GB  |beginning_N_src_group: 1024  |ending_N_src_group: 1024  |N_virtual_GPUs: 6
-Total Number of fill-ins detected: 74747357
+vertex count: 11948 |Total_allocation: 0.25 GB  |beginning_N_src_group: 4096  |ending_N_src_group: 4096  |N_virtual_GPUs: 1
+Total Number of fill-ins detected: 980136
 Total_N_dumping_cpu_memory: 0
-	GPU:0 Slowest virtual GPU takes: 3433.35 ms
-	GPU:3 Fastest virtual GPU takes: 3419.16 ms
-	All 6 datastructures size: 10 GB
+	GPU:0 Slowest virtual GPU takes: 35.7242 ms
+	GPU:0 Fastest virtual GPU takes: 35.7242 ms
+	All 6 datastructures size: 1 GB
 max_dumping_gpu: 0
 #max_dumping: 0
 max_dumping GPU transfer time: 0 ms

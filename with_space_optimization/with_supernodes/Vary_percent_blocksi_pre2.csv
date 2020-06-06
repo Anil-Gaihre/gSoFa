@@ -24,4 +24,4 @@ Final vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
 ./dataset/colend_11948.dat;1;Final vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
 ./dataset/colend_11948.dat;1;Final vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
 ./dataset/colend_11948.dat;1;Final vert_count;N_gpus;p0;p1;#blocks_src;min_time;max_time
-../pre2/colend_659033.dat;6;
+/gpfs/alpine/proj-shared/csc289/symbolic/super_dump/superlu_dist-master/EXAMPLE/colend_11948.dat;1;128;1;
