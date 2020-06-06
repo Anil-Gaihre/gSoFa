@@ -28,10 +28,11 @@ $(exe):$(objs)
 	 $(cc) $(objs) $(commflags) -o $(exe)
 
 test:$(exe)
-		mpiexec -n 1 $(exe) ../pre2/colbeg_659033.dat ../pre2/colend_659033.dat ../pre2/csr_659033.dat 264
-		
+			mpiexec -n 1 $(exe) ../pre2/colbeg_659033.dat ../pre2/colend_659033.dat ../pre2/csr_659033.dat 264 5
+	#mpiexec -n 1 $(exe) ../pre2/colbeg_659033.dat ../pre2/colend_659033.dat ../pre2/csr_659033.dat 264 5
+	
 pre2:$(exe)
-		mpiexec -n 1 $(exe) ../pre2/colbeg_659033.dat ../pre2/colend_659033.dat ../pre2/csr_659033.dat 264
+	mpiexec -n 1 $(exe) ../pre2/colbeg_659033.dat ../pre2/colend_659033.dat ../pre2/csr_659033.dat 264 5
 
 #mpirun -n 2 -host localhost $(exe)
 clean:
